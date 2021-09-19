@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/chenjuan.css">
+  <link rel="stylesheet" type="text/css" href="css/carrousel.css">
+  <style>
+    
+
+  </style>
+</head>
+<body style="margin: 0px;padding: 0px;" >
+  <div>
+    <header>
+      <nav class="navbar  navbar-inverse class="navbar" " role="navigation" style="margin: 0px;padding: 0px;border-radius: 0px; margin-bottom: 0px">
+        <div class="container-fluid"> 
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="首页.html"> 
+            <img class="navbar-logo" src="images/img/NewFeel (1).png" class="img-responsive" style="margin: -10px;"/>&nbsp;&nbsp;
+            NewFeel&nbsp;&nbsp;
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">    
+          <ul class="nav navbar-nav ">
+           <li><a href="首页.html">首页</a></li>
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              剧集<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu ">
+             <li><a href="#"><font color="orange"><b>></b></font>港剧</a></li>
+             <li><a href="#"><font color="orange"><b>></b></font>台剧</a></li>
+             <li><a href="#"><font color="orange"><b>></b></font>欧美剧</a></li>
+             <li><a href="#"><font color="orange"><b>></b></font>日剧</a></li>
+             <li><a href="#"><font color="orange"><b>></b></font>韩剧</a></li>
+           </ul>
+         </li>
+         <li><a href="#">电影</a></li>
+         <li><a href="#">动画</a></li>
+         <li><a href="#">短片</a></li>
+         <li><a href="#">其他</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li>
+          <div class="search_div">
+            <input type="text" class="search_style" placeholder="search..." id="Search_s">
+            <a href="#" class="search-btn" id="search-btn"><i><img src="images/收索.png"></i></a>
+          </div>
+        </li>
+        <li><a href="登录.html">登录</a></li>
+        <li><a href="注册.html" class="login-menu"><span>注册</span></a></li>
+      </ul>  
+    </div>
+  </div>
+</nav>
+<div class="main">
+       <!--  <div id="slide" class="slide">
+            <div class="pic"><img src="images/img_banner/1.jpg"></div>
+            <div class="pic"><img src="images/img_banner/2.jpg"></div>
+            <div class="pic"><img src="images/img_banner/3.jpg"></div>
+            <div class="pic"><img src="images/img_banner/4.jpg"></div>
+            <div class="pic"><img src="images/img_banner/5.jpg"></div>
+            <div class="btn">
+               
+            </div>
+
+        </div>
+        <a href="javascript:void(0)" class="btn-prev" id="left" ><</a>
+        <a href="javascript:void(0)" class="btn-next" id="right" >></a>
+      </div> -->
+      <div class="banner">
+        <section id="dg-container" class="dg-container">
+          <div class="dg-wrapper">
+            <a href="#" title="釜山行">
+              <img src="images/img_banner/1.jpg" >
+              <div class="item-head">
+                <h3>釜山行</h3>
+              </div>
+            </a>
+            <a href="#" >
+              <img src="images/img_banner/2.jpg" >
+              <div class="item-head">
+                <h3>鬼怪</h3>
+              </div>
+            </a>
+            <a href="#" >
+              <img src="images/img_banner/3.jpg">
+              <div class="item-head">
+                <h3>后翼弃兵</h3>
+              </div>
+            </a>
+            <a href="#" >
+              <img src="images/img_banner/4.jpg">
+              <div class="item-head">
+                <h3>权利的游戏</h3>
+              </div>
+            </a>
+            <a href="#" >
+              <img src="images/img_banner/5.jpg">
+              <div class="item-head">
+                <h3>被嫌弃的松子的一生</h3>
+              </div>
+            </a>
+          </div>
+          <ol class="button" id="lightButton">
+            <li index="0">
+              <li index="1">
+                <li index="2">
+                  <li index="3">
+                    <li index="4">
+                    </ol>
+                    <nav>
+                      <span class="dg-prev"></span>
+                      <span class="dg-next"></span>
+                    </nav>
+                  </section>
+                </div>
+                <script src="js/jquery.min.js"></script>
+                <script src="js/carrousel.js"></script>
+                <script >
+                  $(function () {
+                    $('#dg-container').carrousel({
+                      current: 0,
+                      autoplay: true,
+                      interval: 3000
+                    });
+                  });
+                </script>
+              </header>
+              <div class="tiaolan container"> 
+                <div class="jumbotron">
+                  <div class="row">
+                    <div class="col-xs-3"><a href="#" class="like"><i><img src="images/收 藏.png"></i></a></div>
+                    <div class="col-xs-3"><a href="#" class="mine"><i><img src="images/我 的.png"></i></a></div>
+                    <div class="col-xs-3"><a href="#" class="weibo"><i><img src="images/微博.png"></i></a></div>
+                    <div class="col-xs-3"><a href="#" class="shouchang"><i><img src="images/观看记录.png"></i></a></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div> 
+          </div>
+          <script type="text/javascript">
+    // function Search(){
+    //   document.getElementById('search_S').style.width="240px";
+    // }
+    // $("#search-btn").click(function(){
+    //     $("#Search_s").width("240px");
+    //     $("#Search_s").css("border","1px solid white");
+    //     $("#Search_s").css("border-radius","5px");
+
+    // })
+
+    
+  </script>
+  <article class="container">
+
+
+    <div>
+      <div class="smart-box-head">
+        <h2 class="light-title title">
+          <img src="images/tvplay.gif" width="40px" height="40px" style="display: inline;"><span style="vertical-align: sub;">"追剧推荐"</span>
+        </h2>
+        <div class="smart-control pull-right">
+          <a href="剧集.html" class="bordercolor2 bgcolor2hover" >view more</a>
+        </div> 
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="row_img_div">
+              <a href="" ><img src="images/a.jpg" class="row_img" style="display: block;"></a>
+            </div>
+            <div class="div_pname">
+              <a href=""><p class="pname">Star wars</p></a>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="row_img_div">
+              <a href=""><img src="images/b.jpg" class="row_img"></a>
+            </div>
+            <div class="div_pname">
+              <a href=""><p class="pname">心理罪城市之光</p></a>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="row_img_div">
+              <a href=""><img src="images/c.jpg" class="row_img"></a>
+            </div>
+            <div class="div_pname">
+              <a href=""><p class="pname">缝纫机乐队</p></a>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="row_img_div">
+              <a href="详情.html"><img src="images/d.jpg" class="row_img"></a>
+            </div>
+            <div class="div_pname">
+              <a href=""><p class="pname">美国恐怖故事</p></a>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-6">
+           <div class="row_img_div"><a href=""><img src="images/e.jpg" class="row_img"></a></div>
+           <div class="div_pname">
+            <a href=""><p class="pname">美国夫人</p></a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6">
+         <div class="row_img_div"><a href=""><img src="images/f.jpg" class="row_img"></a></div>
+         <div class="div_pname">
+          <a href=""><p class="pname">饥饿游戏</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href="" ><img src="images/a.jpg" class="row_img" style="display: block;"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">Star wars</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href=""><img src="images/b.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">心理罪城市之光</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href=""><img src="images/c.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">缝纫机乐队</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href="详情.html"><img src="images/d.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">美国恐怖故事</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+       <div class="row_img_div"><a href=""><img src="images/e.jpg" class="row_img"></a></div>
+       <div class="div_pname">
+        <a href=""><p class="pname">美国夫人</p></a>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-6 col-xs-6">
+     <div class="row_img_div"><a href=""><img src="images/f.jpg" class="row_img"></a></div>
+     <div class="div_pname">
+      <a href=""><p class="pname">饥饿游戏</p></a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div>
+  <div class="row_lightH">
+    <div class="smart-box-head">
+      <h2 class="light-title title">
+        <img src="images/movie.gif" width="40px" height="40px" style="display: inline;"><span style="vertical-align: sub;">"电影"</span>
+      </h2>
+      <div class="smart-control pull-right">
+        <a href="" class="bordercolor2 bgcolor2hover" >view more</a>
+      </div> 
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href="" ><img src="images/a.jpg" class="row_img" style="display: block;"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">Star wars</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href=""><img src="images/b.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">心理罪城市之光</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href=""><img src="images/c.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">缝纫机乐队</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href="详情.html"><img src="images/d.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">美国恐怖故事</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+       <div class="row_img_div"><a href=""><img src="images/e.jpg" class="row_img"></a></div>
+       <div class="div_pname">
+        <a href=""><p class="pname">美国夫人</p></a>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-6 col-xs-6">
+     <div class="row_img_div"><a href=""><img src="images/f.jpg" class="row_img"></a></div>
+     <div class="div_pname">
+      <a href=""><p class="pname">饥饿游戏</p></a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2 col-sm-6 col-xs-6">
+    <div class="row_img_div">
+      <a href="" ><img src="images/a.jpg" class="row_img" style="display: block;"></a>
+    </div>
+    <div class="div_pname">
+      <a href=""><p class="pname">Star wars</p></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-6 col-xs-6">
+    <div class="row_img_div">
+      <a href=""><img src="images/b.jpg" class="row_img"></a>
+    </div>
+    <div class="div_pname">
+      <a href=""><p class="pname">心理罪城市之光</p></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-6 col-xs-6">
+    <div class="row_img_div">
+      <a href=""><img src="images/c.jpg" class="row_img"></a>
+    </div>
+    <div class="div_pname">
+      <a href=""><p class="pname">缝纫机乐队</p></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-6 col-xs-6">
+    <div class="row_img_div">
+      <a href="详情.html"><img src="images/d.jpg" class="row_img"></a>
+    </div>
+    <div class="div_pname">
+      <a href=""><p class="pname">美国恐怖故事</p></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-6 col-xs-6">
+   <div class="row_img_div"><a href=""><img src="images/e.jpg" class="row_img"></a></div>
+   <div class="div_pname">
+    <a href=""><p class="pname">美国夫人</p></a>
+  </div>
+</div>
+<div class="col-md-2 col-sm-6 col-xs-6">
+ <div class="row_img_div"><a href=""><img src="images/f.jpg" class="row_img"></a></div>
+ <div class="div_pname">
+  <a href=""><p class="pname">饥饿游戏</p></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div>
+  <div class="row_lightH">
+    <div class="smart-box-head">
+      <h2 class="light-title title">
+        <img src="images/shows.gif" width="40px" height="40px" style="display: inline;"><span style="vertical-align: sub;">"动画"</span>
+      </h2>
+      <div class="smart-control pull-right">
+        <a href="" class="bordercolor2 bgcolor2hover" >view more</a>
+      </div> 
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href="" ><img src="images/a.jpg" class="row_img" style="display: block;"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">Star wars</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href=""><img src="images/b.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">心理罪城市之光</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href=""><img src="images/c.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">缝纫机乐队</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="row_img_div">
+          <a href="详情.html"><img src="images/d.jpg" class="row_img"></a>
+        </div>
+        <div class="div_pname">
+          <a href=""><p class="pname">美国恐怖故事</p></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+       <div class="row_img_div"><a href=""><img src="images/e.jpg" class="row_img"></a></div>
+       <div class="div_pname">
+        <a href=""><p class="pname">美国夫人</p></a>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-6 col-xs-6">
+     <div class="row_img_div"><a href=""><img src="images/f.jpg" class="row_img"></a></div>
+     <div class="div_pname">
+      <a href=""><p class="pname">饥饿游戏</p></a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2 col-sm-6 col-xs-6">
+    <div class="row_img_div">
+      <a href="" ><img src="images/a.jpg" class="row_img" style="display: block;"></a>
+    </div>
+    <div class="div_pname">
+      <a href=""><p class="pname">Star wars</p></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-6 col-xs-6">
+    <div class="row_img_div">
+      <a href=""><img src="images/b.jpg" class="row_img"></a>
+    </div>
+    <div class="div_pname">
+      <a href=""><p class="pname">心理罪城市之光</p></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-6 col-xs-6">
+    <div class="row_img_div">
+      <a href=""><img src="images/c.jpg" class="row_img"></a>
+    </div>
+    <div class="div_pname">
+      <a href=""><p class="pname">缝纫机乐队</p></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-6 col-xs-6">
+    <div class="row_img_div">
+      <a href="详情.html"><img src="images/d.jpg" class="row_img"></a>
+    </div>
+    <div class="div_pname">
+      <a href=""><p class="pname">美国恐怖故事</p></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-6 col-xs-6">
+   <div class="row_img_div"><a href=""><img src="images/e.jpg" class="row_img"></a></div>
+   <div class="div_pname">
+    <a href=""><p class="pname">美国夫人</p></a>
+  </div>
+</div>
+<div class="col-md-2 col-sm-6 col-xs-6">
+ <div class="row_img_div"><a href=""><img src="images/f.jpg" class="row_img"></a></div>
+ <div class="div_pname">
+  <a href=""><p class="pname">饥饿游戏</p></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</article>
+
+<div class="jumbotron text-center" style="margin-bottom:0;margin-top: 30px;">
+  <p style="font-size: 13px;line-height: 50px;">Copyright © 2020-2020.12 NewFeel. All Rights Reserved.</p>
+</div>
+</body>
+</html>
+<script>
+  // $('myAffix').affix({
+  //   offset:{
+  //     bottom:30px;
+  //   }
+  // })
+
+</script>
